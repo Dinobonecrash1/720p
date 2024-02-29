@@ -53,5 +53,15 @@
       "required": true
     }
   },
-  "stack": "container"
-}
+  "addons": [{
+    "plan": "heroku-postgresql",
+    "options": {
+      "version": "12"
+    }
+  }],
+  "buildpacks": [{
+    "url": "https://github.com/HellBoy-OP/heroku-buildpack-ffmpeg-latest"
+  },{
+    "url": "heroku/python"
+  }]
+    }
