@@ -147,7 +147,7 @@ if __name__ == "__main__" :
     @app.on_message(filters.incoming & filters.command(["compress", f"compress@{BOT_USERNAME}"]))
     async def help_message(app, message):
         if message.chat.id not in AUTH_USERS:
-            return await message.reply_text("You are not authorised to use this bot contact @Chowdhury_Siam")
+            return await message.reply_text("You are not authorised to use this bot contact Tom")
         query = await message.reply_text("Added to Queue ⏰...\nPlease be patient, Compress will start soon", quote=True)
         data.append(message.reply_to_message)
         if len(data) == 1:
