@@ -46,7 +46,7 @@ async def convert_video(video_file, output_directory, total_time, bot, message, 
      ## lol 😂
     crf.append("28")
     codec.append("libx264")
-    resolution.append("854x480")
+    resolution.append("1280x720")
     preset.append("veryfast")
     audio_b.append("35k")
     file_genertor_command = f'ffmpeg -hide_banner -loglevel quiet -progress "{progress}" -i "{video_file}"  -c:v {codec[0]}  -map 0 -crf {crf[0]} -c:s copy -pix_fmt yuv420p -s {resolution[0]} -b:v 150k -c:a libopus -b:a {audio_b[0]} -preset {preset[0]}  "{out_put_file_name}" -y'
